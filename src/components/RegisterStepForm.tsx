@@ -1,16 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import StepIndicator from "@/components/wizard/StepIndicator";
-import NameStep from "@/components/wizard/NameStep";
-import BirthDateStep from "@/components/wizard/BirthDateStep";
-import ConfirmStep from "@/components/wizard/ConfirmStep";
-import CompleteStep from "@/components/wizard/CompleteStep";
-import type { FormData, Step } from "@/components/wizard/types";
+import StepIndicator from "@/components/register-step-form/StepIndicator";
+import NameStep from "@/components/register-step-form/NameStep";
+import BirthDateStep from "@/components/register-step-form/BirthDateStep";
+import ConfirmStep from "@/components/register-step-form/ConfirmStep";
+import CompleteStep from "@/components/register-step-form/CompleteStep";
+import type { FormData, Step } from "@/components/register-step-form/types";
 
 const emptyForm: FormData = { lastName: "", firstName: "", birthDate: "" };
 
-export default function Wizard() {
+export default function RegisterStepForm() {
   const [step, setStep] = useState<Step>("name");
   const [form, setForm] = useState<FormData>(emptyForm);
   const [submitting, setSubmitting] = useState(false);

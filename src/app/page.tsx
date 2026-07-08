@@ -1,19 +1,11 @@
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center gap-6 px-4 py-10">
       <Card className="w-full max-w-md">
-        <CardHeader>
-          <CardTitle>登録フォーム</CardTitle>
-        </CardHeader>
         <CardContent className="flex flex-col gap-3">
           <Button
             render={<Link href="/register" />}

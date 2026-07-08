@@ -1,5 +1,5 @@
-import Wizard from "@/components/Wizard";
+import RegisterStepForm from "@/components/RegisterStepForm";
 
 export default function RegisterPage() {
-  return <Wizard />;
+  return <RegisterStepForm />;
 }
