@@ -8,7 +8,7 @@ flowchart LR
     B -->|戻る| A
     B -->|次へ| C["③ 確認\n(/)"]
     C -->|戻る| B
-    C -->|登録する<br/>POST /api/entries| D["④ 完了\n(/)"]
+    C -->|登録する<br/>POST /api/user| D["④ 完了\n(/)"]
     D -->|もう一度入力する| A
     D -->|一覧を見る| E["⑤ 登録一覧\n(/list)"]
     E -->|登録フォーム| A
